@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-display: "Lora", serif;
+  --font-script: "Great Vibes", cursive;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-sage: #4a5d4e;
+  --color-brand-earth: #b08968;
+  --color-brand-moss: #6b705c;
+  --color-brand-cream: #fbf9f4;
+  --color-brand-dark: #2f3b32;
+  --color-brand-border: #e6e2d3;
+  --color-brand-red: #b85b46;
+  --color-brand-rust: #92402e;
+}
+
+@layer utilities {
+  .clip-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+}
